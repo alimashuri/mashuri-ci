@@ -1,0 +1,276 @@
+/* ----------------------------------------------
+	Template Name : vredeburg
+	Template Code : :P
+	Version : 1.0   
+	Author : Ali Mashuri
+	Author URI : http://mashuri.web.id/    
+	Last Date Modified : february, 2011	
+ ------------------------------------------------ */
+ 
+/* ----------------------------------------------
+   HTML ELEMENTS
+------------------------------------------------- */ 
+
+/* Top Elements */
+* { margin: 0; padding: 0; outline: 0 }
+
+body {
+	background: #CCC url(../images/bg.gif) repeat-x;
+	font: 12px/170% 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		background: #333;
+	text-align: center;	
+}
+
+/* links */
+a, a:visited {	
+	color: #79A325;
+	background: inherit;
+	text-decoration: none;
+}
+a:hover {
+	color: #73471B;
+	background: inherit;
+	text-decoration: underline;
+}
+
+/* headers */
+h1, h2, h3 {
+	font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-serif;
+	font-weight: Bold; 	
+	padding: 10px;		
+	color: #444;	
+}
+h1 {
+	font-size: 2.9em;		
+}
+h2 {
+	font-size: 1.5em;
+	color: #88AC0B;
+}
+h3 {
+	font-size: 1.6em;
+	font-weight: normal;	
+	padding: 16px 10px 4px 10px;	
+}
+
+/* Paragraph */
+p { padding: 12px 10px;	}
+
+/* Lists */
+ul, ol {
+	margin: 10px 10px;
+	padding: 0 10px;	
+}
+ul { list-style: none; }
+
+dl { padding: 10px; margin: 0; }
+
+dt {
+  font-weight: bold;
+  color: #79A62E;
+}
+dd {
+  padding-left: 25px; 
+}
+
+/* images 
+img {
+	background: #FAFAFA;
+   border: 1px solid #E4E4E4;
+	padding: 8px;
+}
+img.float-right {
+  	margin: 5px 0px 10px 10px;  
+}
+img.float-left {
+  	margin: 5px 10px 10px 0px;
+}
+*/
+code {
+  	margin: 5px 0;
+  	padding: 15px;
+  	text-align: left;
+  	display: block;
+  	overflow: auto;  
+  	font: 500 1em/1.5em 'Lucida Console', 'Courier New', monospace;
+  	/* white-space: pre; */
+  	border: 1px solid #EEE8E1; 
+	background: #FAF7F5;
+}
+acronym {
+  cursor: help;
+  border-bottom: 1px dotted #895F30;
+}
+blockquote {
+	margin: 15px 10px;
+ 	padding: 5px 7px 5px 40px;  	
+   font-weight: normal;
+	font-size: 17px;
+	line-height: 1.6em;
+	font-style: italic;
+	font-family: Georgia, 'Times New Roman', Times, serif;		
+	color: #80614D;	
+	border: 1px solid #EEE8E1; 
+	background: #FAF7F5 url(quote.gif) no-repeat 15px 15px;
+}
+
+/* start - table */
+table {
+	border-collapse: collapse;
+	margin: 15px 10px;		
+}
+th {
+	height: 38px;
+	padding-left: 12px;
+	padding-right: 12px;
+	color: #fff;
+	text-align: left;
+	background: #ADD163;	
+	border-width: 1px;
+  	border-style: solid;
+  	border-color: #C4DE8F #93C138 #93C138 #C4DE8F;	
+}
+tr {
+	height: 34px;
+	background: #fff;
+}
+tr.altrow { background: #F9F9F9;	}
+td {
+	padding-left: 11px;
+	padding-right: 11px;
+	border: 1px solid #E7F0CC;	
+}	
+/* end - table */
+
+/* form elements */
+form {
+	margin: 10px; 
+	padding: 15px 25px 25px 20px; 
+	border: 1px solid #F0F0F0;
+	background: #f8f8f8;
+}
+form p {
+	border-bottom: 1px solid #E6E6E6;
+	padding: 12px 0 5px 0;	margin: 0;	
+	color: #7BA857;
+}
+label {
+	font-weight: bold;
+	color: #7BA857;
+}
+input, select, textarea {
+	margin: 5px 0;
+	padding: 5px;
+	color: #6A6969;
+	border-width: 1px;
+	border-style: solid;
+  	border-color: #d4d4d4 #ebebeb #ebebeb #d4d4d4; 	
+	font: 11px 'Lucida Grande', Verdana, Helvetica, sans-serif;
+}
+input:focus, select:focus, textarea:focus {
+	color: #7BA857;
+	background: #EFFAE6;
+}
+#name, #email, #message, #website {
+	width: 380px;
+}
+input.button { 
+	font: bold 12px Arial, Sans-serif; 
+	height: 30px;
+	margin: 0;
+	padding: 2px 3px; 
+	color: #fff;
+	background: #9CCF5F;
+	
+	border-width: 1px;
+  	border-style: solid;
+  	border-color: #B6DE8F #8DB836 #8DB836 #B6DE8F;
+}
+
+
+/*-------------------------------------------
+   LAYOUT
+--------------------------------------------*/ 
+#wrap {
+	position: relative;
+	width: 952px;
+	margin: 0px auto 0px auto;
+	text-align: left;	
+}
+#header {
+	position: relative;
+	width: 952px;
+	height: 50px;	
+	color: #fff;	
+	padding: 0;	
+	margin: 0;	
+}
+
+/* footer */
+#footer {
+	clear: both;
+	width: 952px;
+	margin: 0;
+	padding: 0px 0 25px 0;
+	background:#333	 url(../images/bottom_bg_left.jpg) left top no-repeat; 		
+	font-family: 'Trebuchet MS', 'Helvetica Neue', Arial, Sans-serif;
+	font-size: 0.95em;
+	color: #777;	
+	text-align: center;	
+	letter-spacing: .2px;
+}
+#footer p {
+	padding:10px 0;
+}
+#footer a:hover { 
+	color: #555; 
+	border-bottom: 1px dotted #555;
+	text-decoration: none;
+}
+#nav {
+	float:left;
+	height: 420px;
+	margin:0 auto;
+	padding-top:80px;
+	width:25%;
+	text-align: right;
+	background: #333 url('../images/fade.jpg') no-repeat center right;
+}
+#nav a{
+	padding:5px 21px 5px 21px;
+	margin:2px 2px 2px 2px;
+	font-size:14px;
+	line-height:30px;
+	background:#000;
+	color:#88AC0B;
+}
+#nav a:hover{
+	background: inherit;
+	text-decoration:none;
+	background:#000;
+	color:#fff;
+
+}
+#nav img{
+	border:none;
+	float:right;
+	padding:2px 10px 2px 10px;
+}
+#content {
+	float:right;
+	margin:0 auto;
+	padding:50px 2px 2px 2px;
+	width:70%;
+	color:#ccc;
+		/* background: #333 url('images/corner.jpg') no-repeat bottom right; */
+}
+#wrapper{
+	clear:both;
+	overflow:hidden; height: 100%;
+	margin: 0 auto;	
+}
+#loading{
+		position: absolute; 
+		left: 50%;
+		top: 50%;	
+}
